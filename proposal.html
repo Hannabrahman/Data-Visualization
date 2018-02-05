@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css"/>
+		<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+		<script src="https://d3js.org/topojson.v1.min.js"></script>
+		<script src="index.js"></script>
+		<script src="Multiline.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    <!--Justin: I'm using open sans font for the title and paragraph-->
+	</head>
+	<body>
+        <div class = "container" style="text-align:center">
+          <div class="page-header">
+              <h1>Influential Women In History</h1>
+          </div>
+          <p style = "p::first-letter {font-size: 200%;color: #8A2BE2}"></p>
+                We take a look at some of the groundbreaking and inspirational female revolutionary pioneers through time; women who changed the world as we know it by breaking boundaries in fields of science, political activists, aviation and more.
+
+                Each of these women dared to be first - challenging convention and stepping outside of their expected roles to create new opportunities for their sisters. From sport and physical feats to the first woman to obtain a degree, here are some of history's greatest female role models in different professions.
+          </p>
+        <p style="color: white; font-size: 32px; font-weight: bold; background-color: red"> Under Construction </p>
+        <img src="http://creativetravelgroup.com/wp-content/uploads/2013/04/under_construction2.png">
+           <div class = "row">
+               <!--http://stackoverflow.com/questions/23765925/cant-insert-a-d3-chart-on-a-bootstrap-div-->
+                <div class = "col-md-10">
+                    <svg width="980" height="600" id="countrysvg"></svg>
+                </div>
+                <script>
+                    var projection = {
+	                   center: [3, 9],
+                        rotate: [-109, 0, 0],
+                        parallels: [-12, 30],
+                        scale: 700
+                    };
+                    display(projection, 1);
+               </script>
+                       
+        <div class = "page-footer">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <h4 style="font-weight: bold"><br/>Created by</h4>
+                                <p id="myParagraph">
+                                    Faeze Brahman 
+                                    in collaboration with Professor Lodha.   
+                                </p>
+                            <h4 style="font-weight: bold"><br/>Designed for</h4>
+                                <p id="myParagraph">CMPS 165: Data Visualization, Winter 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "container">
+                   <br/>
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <h4 style="font-weight: bold">Files</h4>
+                            
+                                <p id="myParagraph">
+                                    Will be provided.
+                                <p>                       
+                        </div>
+                        <div class = "col-md-4">
+                            <h4 style="font-weight: bold">Data Sources</h4>
+                                <p id="myParagraph">
+                                    Women In History<br/>
+                                    <a href="http://www.historynet.com/famous-women-in-history#famous-women-list">http://www.historynet.com</a> <br>  <br/>   
+                                    Inspirational Women<br/>
+                                    <a href="https://www.stylist.co.uk/people/inspirational-female-pioneers/12690">https://www.stylist.co.uk</a> <br> <br/>
+                                    Biography Online<br/>
+                                    <a href="https://www.biographyonline.net/people/women-who-changed-world.html">https://www.biographyonline.net</a> <br> <br/>
+
+                                    
+                                <p>   
+                        </div>
+                        <div class = "col-md-4">
+                            <h4 style="font-weight: bold">Code Sources</h4>
+                                <p id="myParagraph">
+                                    <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" rel="stylesheet">http://www.w3schools.com</a>
+                                    <br/>
+                                    <a href="http://www.w3schools.com/js/js_htmldom_navigation.asp" rel="stylesheet">http://www.w3schools.com/js</a>
+                                <p> 
+                        </div>
+                    </div>
+                    <svg width="400" height="30">
+              <rect x="50" y="20" width="150" height="70"
+              style="fill:blue;stroke:pink;stroke-width:5;opacity:0" />
+            </svg>
+                </div>
+            </div>
+	</body>
+</html>
