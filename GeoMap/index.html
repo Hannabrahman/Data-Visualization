@@ -26,10 +26,6 @@ div {
 </div>
     
 
-<!--
-.on("click", function(){var nextColor = this.style.fill == "white" ? "magenta" : "white";
-        d3.select(this).style("fill", nextColor);});    
--->
     
 <svg width="960" height="800"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -92,7 +88,7 @@ g.call(d3.axisBottom(x)
   .select(".domain")
     .remove();
 
-d3.json("ka-topo.json", function(error, topology) {
+d3.json("ka-merge-topo.json", function(error, topology) {
   if (error) throw error;
 
   svg.append("g")
@@ -108,15 +104,7 @@ d3.json("ka-topo.json", function(error, topology) {
       .attr("stroke", "#000")
       .attr("stroke-opacity", 0.6)
       .attr("d", path);
-// 
-//        svg.append("button")
-//        .enter().append("rect")
-//        .attr("x", width-10)
-//        .attr("y", height-10)
-//        .attr("width", 40)
-//        .attr("height", 20)
-//        .attr("fill", "lightgrey")
-//        .style("stroke-size", "1px");
+
 
 });
     
